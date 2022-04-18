@@ -1,0 +1,237 @@
+\bta{2011}
+
+
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+氢原子基态的能量为$-13.6V$，那么第一激发态的氢原子电离能为 \xzanswer{B} 
+
+\fourchoices
+{13.6 eV}
+{3.39 eV}
+{7.8 eV}
+{10.2 eV}
+
+
+\item 
+普朗克常数$h$的数值为 \xzanswer{D} 
+
+\fourchoices
+{$1.05\times10^{-34} $}
+{$6.63\times10^{-34}  $}
+{$1.05\times10^{-34} \ J \cdot s  $}
+{$6.63\times10^{-34} \ J \cdot s $}
+
+\item 
+$ A $、$ B $为厄米算符，那么下列各选项为厄米算符的是 \xzanswer{B} 
+
+\fourchoices
+{$\dfrac{1}{2}(BA-AB) $}
+{$\dfrac{i}{2}(BA-AB) $}
+{$AB+iBA $}
+{$\dfrac{i}{2}(BA+AB)$}
+
+\item 
+对于中心力场，下列各式正确的是 \xzanswer{C} 
+
+
+\fourchoices
+{$\int_{0}^{\infty} \mu^{2}(r) r^{2} d r=1$}
+{$ \int_{0}^{\infty} \mu^{2} (r) 4 \pi r^{2} d r=1$}
+{$\int_{0}^{\infty} R_{l}^{2}(r) r^{2} d r=1$}
+{$\int_{0}^{\infty} R_{l}^{2}(r) 4 \pi r^{2} d r=1$}
+
+
+
+
+其中：$\mu{(r)}=R_l(r)r$
+
+\item 经典力学中有$\vec{L}=\vec{r}\times\vec{p}=-\vec{p}\times \vec{r}$，那么在量子力学中$\vec{L}=\vec{r}\times\vec{p}=-\vec{p}\times \vec{r}$是否也成立。请说明理由。
+
+
+\banswer{
+	成立，写成分量形式可证
+}
+
+
+\item 
+在$(\vec{S}^2,S_z)$的共同的本征态$ Y_{10} $中，写出$S_x,S_y$的矩阵表示，并说明是否可以找到这样的一个表象，使得$S_x,S_y,S_z$在该表象中的矩阵表示均为实矩阵，并说明理由。
+
+\banswer{
+	%$S_{x}=\frac{\hbar}{2}\left(\begin{array}{ll}0 & 1 \\ 1 & 0\end{array}\right), S_{y}=\frac{\hbar}{2}\left(\begin{array}{cc}0 & -i \\ i & 0\end{array}\right)$，不存在一个表象使得 $S_{x}, S_{y}, S_{z}$ 在该表象中的矩阵表示均为实矩阵。
+\iffalse
+矩阵元为\\
+\[ 
+	\begin{aligned}
+	<l ^{\prime} m ^{\prime} |S_{x}|lm>=  \frac{1}{2}\left(
+	\sqrt{l(l+1)-m(m+1)} \cdot \delta_{l ^{\prime} l} \delta_{m ^{\prime} ,m+1} +\right.\\
+ \left.\sqrt{l(l+1)-m(m-1)} \cdot \delta_{l ^{\prime} l} \delta_{m ^{\prime} ,m-1}
+	\right) 
+\end{aligned}
+ \]
+\[ 
+\begin{aligned}
+<l ^{\prime} m ^{\prime} |S_{y}|lm>=\frac{1}{2i}\left(
+\sqrt{l(l+1)-m(m+1)} \cdot \delta_{l ^{\prime} l} \delta_{m ^{\prime} ,m+1} +\right.\\
+\left. \sqrt{l(l+1)-m(m-1)} \cdot \delta_{l ^{\prime} l} \delta_{m ^{\prime} ,m-1}
+\right)
+\end{aligned}
+\] 
+\fi
+可用升降算符写出矩阵元，再写出矩阵。或者直接套用泡利矩阵的形式
+\[ 
+S_{x}=\hbar\left(\begin{array}{ll}
+	0 & 1 \\
+	1 & 0
+\end{array}\right) \quad 
+S_{y}=\hbar\left(\begin{array}{cc}
+	0 & -i \\
+	i & 0
+\end{array}\right)  \quad 
+S_{z}=\hbar\left(\begin{array}{cc}
+	1 & 0 \\
+	0 & -1
+\end{array}\right)
+ \]
+ 不存在，因为实矩阵不可能使得对易关系$ [S_{x}, S_{y}]=i\hbar S_{z} $成立
+}
+
+
+\item 
+写出氢原子、一维简谐振子、一维无限深势阱的能级，并用示意图表示。
+
+\banswer{
+	氢原子: $E_{n}=-\frac{e^{2}}{2 a} \frac{1}{n^{2}}\left(a=\frac{\hbar^{2}}{m e^{2}}\right)$\\一维简谐振子： $E_{n}=\left(n+\frac{1}{2}\right) \hbar \omega$\\ 一维无限深势阱： $E_{n}=\frac{n^{2} \pi^{2} \hbar^{2}}{2 m a^{2}}$\\
+	图略
+}
+
+
+\item 
+两个非全同粒子处于态$\psi(x_1,x_2)$，求出一个粒子处于$p_{1}^{\prime}, p_{1}^{\prime \prime}$之间，另一个粒子处于$x_{2}^{\prime}, x_{2}^{\prime \prime}$之间的几率。
+
+\banswer{
+	$P=\frac{\int_{x_{2}^{\prime}}^{x_{2}^{\prime \prime}} \int_{p_{1}^{\prime}}^{p_{1}^{\prime \prime}} \left|\frac{1}{\sqrt{2 \pi \hbar}} \int_{-\infty}^{+\infty} \psi\left(x_{1}, x_{2}\right) e^{-\frac{i x_{1} p}{\hbar}} d x_{1}\right|^{2} d p_{1} d x_{2}}{\int_{-\infty}^{+\infty} \int_{-\infty}^{+\infty}\left|\psi\left(x_{1}, x_{2}\right)\right|^{2} d x_{1} d x_{2}}$
+}
+
+
+\end{enumerate}
+
+
+\item 	已知$\hat{p}_r=\frac{1}{2}(\frac{\vec{r}}{r}\cdot\vec{p}+\vec{p}\cdot\frac{\vec{r}}{r})$
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+$\hat{p}_r$是否为厄米算符，为什么？
+\item 
+写出$\hat{p}_r$的算符表示。
+\item 
+求出$[\hat{r},\hat{p}_r]=$？
+\end{enumerate}
+
+
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	是厄米算符，易证
+	\item 
+	$\hat{p}_{r}=-i \hbar\left(\frac{1}{r}+\frac{\partial}{\partial r}\right)$
+	\item 
+	$\left[r, p_{r}\right]=i \hbar$
+\end{enumerate}
+
+	
+}
+
+
+
+\newpage
+\item 
+（$30$）有一质量为$m$的粒子在半径为$R$的圆周上运动，现加一微扰：
+$$
+H'=V(\varphi)=\begin{cases}
+V_1,&-\alpha<\varphi<0;\\
+V_2,&0<\varphi<\alpha;\\
+0,     &\text{其他}
+\end{cases}
+$$
+其中$\alpha<\pi$，求对最低两能级的一级修正。
+
+\banswer{
+	哈密顿算符$ \hat{H}_{0}=\frac{l_{z}^{2}}{2I} $，$ \Psi_{n}^{(0)}=\frac{1}{\sqrt{2\pi}}  e^{im\phi} $，$ E_{0}^{(0)}=\frac{m^{2}\hbar^{2}}{2I} $\\
+	$ n=0 $时无简并，$ E_{0}=(v_{1}+v_{2}) \alpha  $\\
+	$ n=1 $时二重简并，分裂成两条，\\
+	$ E_{11}=\frac{\hbar^{2}}{2I}+ (v_{1}+v_{2}) \alpha + 2\sin  \alpha \sqrt{v_{1}^{2} +v_{2}^{2}+2v_{1}v_{2}\cos 2 \alpha  }$\\
+	$ E_{12}=\frac{\hbar^{2}}{2I}+ (v_{1}+v_{2}) \alpha - 2\sin  \alpha \sqrt{v_{1}^{2} +v_{2}^{2}+2v_{1}v_{2}\cos 2 \alpha  }$\\
+	其中$ I=mR^{2} $
+}
+
+
+\item 
+（$30$）一粒子在一维无限深方势阱$(0<x<a)$中运动，时间$t=0$时处在基态。此时加入一个高为$V_0$，宽为$b(b\ll a)$，中心在$\frac{a}{2}$的方势垒微扰。求$t_0(t_0>0)$时撤去微扰，体系处于前三个激发态的概率。
+
+
+\banswer{
+\begin{equation*}\label{key}
+	\begin{aligned}
+		<m|H ^{\prime} |1>&=\frac{2}{a} \cdot V_{0} \cdot \int_{\frac{a-b}{2}}^{\frac{a+b}{2}} \sin \frac{m\pi}{a} x \sin \frac{\pi}{a} x dx \\
+		&=\frac{2}{\pi} \cdot V_{0} \cdot \int_{\frac{\pi}{2} -\frac{\pi}{2} \frac{b}{a} }^{\frac{\pi}{2} +\frac{\pi}{2} \frac{b}{a} } \sin m\theta \sin \theta d\theta \\
+		& \approx  \frac{2}{\pi} \cdot V_{0} \cdot \frac{1}{m} \cdot \cos m\theta \Big| _{\frac{\pi}{2} -\frac{\pi}{2} \frac{b}{a} }^{\frac{\pi}{2} +\frac{\pi}{2} \frac{b}{a} }
+	\end{aligned}
+\end{equation*}
+这里，很容易得到$ \braket{2|H ^{\prime} |1}=0 $，$ \braket{3|H ^{\prime} |1}=\frac{2}{\pi} V_{0}  \frac{ -2 }{ 3 } \sin (\frac{3}{2}\pi\frac{b}{a} ) \approx -2 \frac{b}{a} V_{0} $，$ \braket{4|H ^{\prime} |1}=0 $。这里也可以采用和差化积的方式来进行精确的计算
+\[ 
+<m|H ^{\prime} |1>=\frac{V_{0}}{\pi} \left(\frac{1}{m-1} \sin(m-1)t -\frac{1}{m+1} \sin(m+1)t  \right)  \Big| _{\frac{\pi}{2} -\frac{\pi}{2} \frac{b}{a} }^{\frac{\pi}{2} +\frac{\pi}{2} \frac{b}{a} }
+ \]
+得到的结果除$ \braket{3|H ^{\prime} |1}=-\frac{V_{0}}{\pi} \left(\sin \pi\frac{b}{a} +\frac{1}{2} \sin 2\pi \frac{b}{a} \right)\approx -2\frac{b}{a} V_{0} $外其余一样，不过也可以看到取近似后两者的结果是一致的。
+	
+$ P_{1\rightarrow 2}=0 $，$ P_{1\rightarrow 3}=\left|  \frac{H ^{\prime} _{31}}{\hbar \omega_{31}}\right| ^ 2 \cdot \left( 1- \cos \omega_{31} t_{0} \right) $，$ P_{1\rightarrow 4}=0 $
+}
+
+
+\item 
+在$(l^2,l_z)$的共同表象中，粒子处于$Y_{20}$态，求$l_x$的可能值及相应的几率。
+
+\banswer{ 
+$ l_{x} $的可能测值及相应的概率为:
+\begin{center}
+ \begin{tabular}{|c|c|c|c|c|c|}
+ \hline 
+$l_{x}$ &$2 \hbar $ & $ \hbar$ & $0$ & $-\hbar$ & $-2 \hbar$ \\
+\hline
+$ P $ &$\frac{3}{8}$ & $0$ &$\frac{1}{4}$  & $0$ & $ \frac{3}{8}$  \\ 
+ \hline 
+ \end{tabular}
+\end{center}
+解法有几种。共五个概率值，五个未知数，找五个独立方程即可，找方程的过程中，可充分利用$ l_{z}\ket{10}=0 $的性质，用$ l_{x} $本征态的升降算符来表示$ l_{z} $。
+$ l_{x} $本征值为$ m $的本征态是$ e^{-i\frac{\pi}{2}l_{y}}\ket{ lm} $，也可以推导相应矩阵元$\bra{lm ^{\prime} } e^{-i\frac{\pi}{2}l_{y}}\ket{ lm} $的关系式。
+}
+
+
+
+\end{enumerate}
+
+
+
+
+
+

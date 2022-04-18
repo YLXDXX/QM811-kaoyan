@@ -1,0 +1,237 @@
+\bta{2014}
+
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	已知算符 $A=\left(\begin{array}{cc}1 & 0 \\ 0 & \mathrm{c}-1\end{array}\right), \quad \mathrm{B}=\left(\begin{array}{cc}0 & -i \\ i & 0\end{array}\right)$,其中c为实常数，当 $\mathrm{c}=\mathrm{c}_{0}$, 有共同本征态。
+	\begin{enumerate}
+		%\renewcommand{\labelenumi}{\arabic{enumi}.}
+		% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+		%设定全局标号series=example	%引用全局变量resume=example
+		%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+		%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+		\item
+		求 $c_{0}$ 的值;
+		\item 
+		求当 $\mathrm{c}=\mathrm{c}_{0}$ 时算符 $A$ 和B共同本征态;
+		\item 
+		求当 $\mathrm{c} \neq \mathrm{c}_{0}$, 由 $A$ 表象到 $\mathrm{B}$ 表象的变换矩阵。
+		
+		
+		
+	\end{enumerate}
+
+
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	$ c_{0}=2 $
+	\item 
+	$ \ket{1}= \frac{1}{\sqrt{2}}\commamatrix[b]{1; i}$；$ \ket{-1} = \frac{1}{\sqrt{2}}\commamatrix[b]{1; -i}$
+	\item 
+	过渡矩阵为
+	\[ 
+	S=\frac{1}{\sqrt{2}}\commamatrix[b]{1,-i; 1,i}
+	 \]
+	\begin{note}
+		由于基矢量的选择问题，过渡矩阵不唯一。
+	\end{note}
+\end{enumerate}
+
+
+}
+
+	
+\item 
+两个质量为 $\mu$ 的非全同粒子被紧闭在 $0 \leq x \leq L$ 的无限深势阱中。
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+忽略两个粒子间的相互作用,求系统的三个最低能量和相应的归一化波函数；
+\item 	
+假设粒子间的相互作用 $\mathrm{V}=\lambda \delta\left(x_{1}-x_{2}\right)$ 的微弱相互作用, 求系统的三个最低能量（$ \lambda $的一级近似）及相应的归一化波函数。
+\end{enumerate}
+
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	两粒子的波函数和能量为
+	\[ 
+	\psi(x_{1},x_{2})=\frac{2}{L} \sin \frac{n_{1}\pi}{L} x_{1} \sin \frac{n_{2}\pi}{L} x_{2}  \quad E=\frac{\pi^{2}\hbar^{2}}{2mL^{2}}(n_{1}^{2}+n_{2}^{2})
+	 \]
+	基态波函数无简并，第一激发态二重简并，第二激发态无简并。
+	\item 
+	基态：$ E_{0}=\frac{\pi^{2}\hbar^{2}}{mL^{2}}+\frac{3}{2}\cdot \frac{\lambda}{L} $，波函数存疑。\\
+	第一激发态：分裂成两条。\\
+	第一条$ E_{11}= \frac{5}{2} \frac{\pi^{2}\hbar^{2}}{mL^{2}} $，$ \psi ^{\prime} _{11}=\frac{1}{\sqrt{2}}( \psi_{11} - \psi_{12})  $\\
+	 	第一条$ E_{11}= \frac{5}{2} \frac{\pi^{2}\hbar^{2}}{mL^{2}} + 2\cdot \frac{ \lambda}{L} $，$ \psi ^{\prime} _{12}=\frac{1}{\sqrt{2}}( \psi_{11} + \psi_{12})  $
+	
+	
+\end{enumerate}
+
+	
+}
+
+\newpage
+\item 
+一个质量为 $\mu$、电荷为$ q $、自旋为$ 0 $的粒子被限制在 $xOy$ 平面内半径为 $a$ 的圆周上运动。
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	求该粒子的哈密顿量$ \hat{H} $及角动量算符的 $\mathrm{L}_{z}$ 的本征值及相应的归一化本征函数；
+
+	\item 
+	若在$ Z $轴加一磁场 $  \vv{B}  $, 求系统哈密顿量$ \hat{H} $的本征值及相应的归一化本征函数, 讨论加
+	入磁场后能级简并度的变化。（提示取矢势$ \vv{\mathrm{A}}=\frac{1}{2} \vec{B} \times \vec{r} $）
+	
+	
+\end{enumerate}
+
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	$ \hat{H}=\frac{L_{z}^{2}}{2 \mu a^{2}} $与$\mathrm{L}_{z}$有共同本征函数
+	\[ 
+	\psi_{m}(\phi)=\frac{1}{\sqrt{2 \pi}} e^{i m \varphi}  \quad  E_{m}=\frac{\hbar^{2} m^{2}}{2 \mu a^{2}}
+	 \]
+	$m=0, \pm 1, \pm 2, \cdots$，
+	除了 $m=0$ 以外, 其他能级均二重简并
+	
+	\item 
+	加上磁场后 
+	\[ 
+\begin{aligned}
+		\hat{H}=\frac{1}{2 \mu}\left(\hat{\vec{p}}-\frac{q}{c} \vec{A}\right)^{2}&=\frac{1}{2 \mu}\left[\hat{\vec{p}}^{2}+\left(\frac{q}{c}\right)^{2} \vec{A}^{2}-\frac{q}{c}(\hat{\vec{p}} \cdot \vec{A}+\vec{A} \cdot \hat{\vec{p}})\right]\\
+	&=\frac{1}{2 \mu}\left[\frac{L_{z}{ }^{2}}{a^{2}}+\left(\frac{q}{c}\right)^{2} \frac{a^{2} B^{2}}{4}-\frac{q}{c} B L_{z}\right]
+\end{aligned}
+	 \]
+能量为
+\[ 
+E_{m}=\frac{1}{2 \mu}\left[\frac{(m \hbar)^{2}}{a^{2}}+\left(\frac{q}{c}\right)^{2} \frac{a^{2} B^{2}}{4}-\frac{q}{c} B m \hbar\right]
+ \]	
+简并解除
+\end{enumerate}
+
+	
+}
+
+
+\item 
+一个质量为 $\mu$ 、电荷为 $q$ 的谐振子在外电场 $\varepsilon$ 的作用下 $ \hat{ \mathrm{H}}=\frac{p^{2}}{2 \mu}+\frac{1}{2} \mu \omega^{2} x^{2}-q \varepsilon x $。
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	若已知 $\hat{H_{0}}=\frac{P^{2}}{2 \mu}+\frac{1}{2} \mu \omega^{2} x^{2}$ 的本征能量为 $\mathrm{E}_{\mathrm{n}}$ 的相应本征函数为 $ \ket{n} $, 求 $\hat{\mathrm{H}}$ 的  本征
+	能量 $\widetilde{\mathrm{E}}_{\mathrm{n}}$及相应的本征函数 $ \ket{\tilde{n}} $。
+	\item 
+	若 $\mathrm{t}=0$ 时刻处于系统 $\hat{H_{0}}$ 的初态 $ \ket{0} $, 求 $\mathrm{t}>0$ 时任处 $\hat{H_{0}}$ 的初态 $ \ket{0} $ 几率 $P_{0}$。
+	
+\end{enumerate}
+
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	$ \hat{H}=\frac{\hat{p}^{2}}{2 \mu}+\frac{1}{2} \mu \omega^{2}\left(\hat{x}-x_{0}\right)^{2}-\frac{q^{2} \varepsilon^{2}}{2 \mu \omega^{2}} $，其中 $x_{0}=\frac{q \varepsilon}{\mu \omega^{2}}$
+	\[ 
+	\widetilde{\mathrm{E}}_{\mathrm{n}}=\mathrm{E}_{\mathrm{n}}--\frac{q^{2} \varepsilon^{2}}{2 \mu \omega^{2}}  \qquad 
+	\ket{\tilde{n}}=e^{-i\frac{x_{0}}{\hbar} \hat{p} } \ket{n}
+	 \]
+	\item 
+	先将$ \ket{0} $用$ \ket{\tilde{n}} $表示出来，得到在$ t $时刻的波函数$ \ket{\tilde{\psi}(t)} $，再将$ \ket{\tilde{\psi}(t)} $用$ \ket{n} $表示出来，得到波函数$ \ket{\psi(t)} $，最后得到相应的概率
+	\[ 
+	P_{0}=e^{2 \cdot \frac{\omega}{\hbar} \cdot mx^{2}_{0} \cdot \sin \frac{\omega}{2} t}
+	 \]
+	
+\end{enumerate}
+
+	
+}
+
+\item 
+三个电子做一维运动, 相互之间的作用可以忽略。单粒子的能量本征值为 $\varepsilon_{n}$, 相应的
+归化一波函数为 $\psi_{n \sigma}=\psi_{n}(x) \chi_{\sigma} , \varepsilon_{0}<\varepsilon_{1}<\varepsilon_{2}<\ldots $,  $n=0,1,2 \ldots \ldots$; 其中 $\sigma$ 为单粒子自旋$ \hat{s} $的第三
+分量 $\hat{s}_{z}$ 的本征态。
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	求该全同体系的基态能量及相应的归化一化本征函数。 
+	\item 
+	求系统总自旋的 $\hat{S}$的第三 分量 $\hat{S}_{z}=\hat{S}_{1 z}+\hat{S}_{2 z}+\hat{S}_{3 z}$ 在基态的平均值。
+	
+	
+	
+\end{enumerate}
+
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	基态能量$E_{0}=2 \varepsilon_{0}+\varepsilon_{1}$，二重简并
+	\[ 
+	\ket{\varphi_{1}}=  \frac{1}{\sqrt{6}}\left|\begin{array}{lll}
+			\psi_{0+}(1) & \psi_{0+}(2) & \psi_{0+}(3) \\
+			\psi_{0-}(1) & \psi_{0-}(2) & \psi_{0-}(3) \\
+			\psi_{1+}(1) & \psi_{1+}(2) & \psi_{1+}(3)
+		\end{array}\right|   \quad 
+	\ket{\varphi_{2}}=\frac{1}{\sqrt{6}}\left|\begin{array}{lll}
+		\psi_{0+}(1) & \psi_{0+}(2) & \psi_{0+}(3) \\
+		\psi_{0-}(1) & \psi_{0-}(2) & \psi_{0-}(3) \\
+		\psi_{1-}(1) & \psi_{1-}(2) & \psi_{1-}(3)
+	\end{array}\right|
+	 \]
+	
+\item 
+$\left\langle\varphi_{1}\left|S_{z}\right| \varphi_{1}\right\rangle=\frac{\hbar}{2}$，$\left\langle\varphi_{2}\left|S_{z}\right| \varphi_{2}\right\rangle=-\frac{\hbar}{2}$	
+	
+\end{enumerate}
+
+
+}
+
+
+\end{enumerate}
+

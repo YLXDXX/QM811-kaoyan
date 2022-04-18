@@ -1,0 +1,291 @@
+\bta{2010}
+
+
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+
+
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+设$\hat{A},\hat{B}$与Pauli算符对易，证明：
+$(\vec{\sigma}\cdot\vec{A})(\vec{\sigma}\cdot\vec{B})=\vec{A}\cdot\vec{B}+i\vec{\sigma}\cdot(\vec{A}\times\vec{B})$
+
+\item 
+试将$(\hat{I}+\hat{\sigma}_x+i\hat{\sigma}_y)^{\frac{1}{2}}$表示成$\hat{I},\hat{\sigma}_x,\hat{\sigma}_y,\hat{\sigma_z}$的线性叠加，$\hat{I}$为单位算符。
+
+\end{enumerate}
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	证明略
+	\item 
+	$\sqrt{I+\sigma_{x}+i \sigma_{y}}=I+\frac{1}{2}\left(\sigma_{x}+i \sigma_{y}\right)$
+	或者
+	$\sqrt{I+\sigma_{x}+i \sigma_{y}}=-I-\frac{1}{2}\left(\sigma_{x}+i \sigma_{y}\right)$
+	
+\end{enumerate}
+\begin{note}
+	表示方法不唯一，这是由于根号的多值性决定的
+\end{note}
+
+}
+
+
+
+
+\item 
+设一维谐振子的初态为$\psi(x,0)=\cos\frac{\theta}{2}\varphi_0(x)+\sin\frac{\theta}{2}\varphi_1(x)$，
+即基态与第一激发态的叠加，其中$\theta$为实参数：
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+求$t$时刻的波函数$\psi(x,t)$；
+
+\item 
+求$t$时刻粒子处于基态及第一激发态的概率；
+
+\item 
+求$t$时刻粒子的势能算符$\hat{V}=\frac{m\omega^2}{2}x^2$的平均值；
+
+\item 
+求演化成$-\psi(x,0)$所需的最短时间$t_{min}$。
+\end{enumerate}
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	$\psi(x, t)=\cos \frac{\theta}{2}|0\rangle e^{-\frac{i \omega t}{2}}+\sin \frac{\theta}{2}|1\rangle e^{-\frac{3 i \omega t}{2}}$
+	\item 
+	$P_{0}=\cos ^{2} \frac{\theta}{2}$
+	 \quad $P_{1}=\sin ^{2} \frac{\theta}{2}$
+	\item 
+	$\langle V\rangle=\frac{m \omega^{2}}{2}\left\langle x^{2}\right\rangle=\frac{\hbar \omega}{4} \cos ^{2} \frac{\theta}{2}+\frac{3 \hbar \omega}{4} \sin ^{2} \frac{\theta}{2}$
+	\item 
+	$ t_{\min}=\frac{2\pi}{\omega} $
+\end{enumerate}
+}
+
+
+
+\item 
+设基态氢原子处于弱电场中，微扰哈密顿量为：
+$$
+\hat{H} ^{\prime} =\begin{cases}0,&t\le0\\
+\lambda ze^{-\frac{t}{T}},&t>0
+\end{cases}
+$$
+其中$  \lambda,T $为常数。
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+求很长时间后$(t\gg T)$电子跃迁到激发态的概率。
+基态和激发态波函数为：
+$$
+\begin{aligned}
+	&\psi_{100}(\vec{r})=R_{10}(r)Y_{00}(\theta,\varphi)=\frac{2}{a^{\frac{3}{2}}}e^{-\frac{r}{a}} \cdot \frac{1}{\sqrt{4\pi}} 
+	\\ 
+	&\psi_{210}(\vec{r})=R_{21}(r)Y_{10}(\theta,\varphi)=\frac{1}{(2a)^{\frac{3}{2}}}\frac{r}{\sqrt3a}e^{-\frac{r}{2a}} \cdot \sqrt{\frac{3}{4\pi}}\cos\theta 
+\end{aligned}
+$$
+其中$  a  $为玻尔半径。
+\item 
+基态电子跃迁到下列哪个激发态的概率等于零？简述理由。
+\fourchoices
+{$\psi_{200}$}
+{$\psi_{211}$}
+{$\psi_{21,-1}$}
+{$\psi_{210}$}
+
+
+	
+\end{enumerate}
+
+\banswer{
+采用球坐标: $\hat{H}^{\prime}=\lambda z e^{-\frac{t}{T}}=\lambda e^{-\frac{t}{T}} r \cos \theta$，注意到
+\[ \cos \theta Y_{l m}=\sqrt{\frac{(l+1)^{2}-m^{2}}{(2 l+1)(2 l+3)}} \mathrm{Y}_{l+1, m}+\sqrt{\frac{l^{2}-m^{2}}{(2 l-1)(2 l+1)}} \mathrm{Y}_{l-1, m} \]
+\[ 
+a_{m n}=\frac{1}{i \hbar} \int_{0}^{t} H_{m n}^{\prime} e^{i \omega_{m n} t^{\prime}} d t^{\prime}
+\]
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	\[ 
+	H_{21}^{\prime}=\left\langle\psi_{210}\left|\hat{H}^{\prime}\right| \psi_{100}\right\rangle=4\sqrt{2} \cdot \left(\frac{2}{3}\right)^{5} \cdot a \cdot e^{-\frac{t}{T}}
+	 \]
+	 \[ 
+	 P=\ 2^{5} \left( \frac{ 2 }{ 3 } \right)^{10} \lambda^{2}  \cdot \frac{a^{2}}{\hbar^{2}} \cdot \frac{T^{2}}{1+\omega_{21}^{2}T^{2}}
+	  \]
+	\item 
+	根据$ \cos \theta Y_{l m} $的性质，此时的选择定则为$ \Delta m =0 , \Delta l=\pm 1 $，
+	所以基态电子跃迁到激发态 $ \psi_{200}, \psi_{211}, \psi_{21,-1}$ 的概率均等于零。
+\end{enumerate}
+
+	
+}
+
+
+\newpage
+
+\item 
+两个质量为$m$的粒子处于一个边长为$a>b>c$的不可穿透的长盒子中，求下列条件下，该体系能量最低态的波函数（只写出空间部分）及对应能量。
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+非全同粒子。
+\item 
+零自旋全同粒子。
+\item 
+自旋为$\frac{1}{2}$的全同粒子。
+\end{enumerate}
+\banswer{
+一个粒子处于长盒子中的波函数及相应能量为
+$$
+\phi(x, y, z)=\frac{2 \sqrt{2}}{\sqrt{a b c}} \sin \frac{n_{1} \pi x}{a} \sin \frac{n_{2} \pi x}{b} \sin \frac{n_{3} \pi z}{c} \quad e_{n}=\frac{\pi^{2} \hbar^{2}}{2 m}\left(\frac{n_{1}^{2}}{a^{2}}+\frac{n_{2}^{2}}{b^{2}}+\frac{n_{3}^{2}}{c^{2}}\right)
+$$
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	非全同粒子基态：
+	$$\psi_{1}\left(r_{1}, r_{2}\right)=\phi_{1}\left(r_{1}\right) \phi_{1}\left(r_{2}\right)=\frac{8}{a b c} \sin \frac{\pi x_{1}}{a} \sin \frac{\pi y_{1}}{b} \sin \frac{\pi z_{1}}{c} \sin \frac{\pi x_{2}}{a} \sin \frac{\pi y_{2}}{b} \sin \frac{\pi z_{2}}{c}$$
+	$$
+	E=e_{1}+e_{1}=\frac{\pi^{2} \hbar^{2}}{m}\left(\frac{1}{a^{2}}+\frac{1}{b^{2}}+\frac{1}{c^{2}}\right)
+	$$
+	\item 
+	零自旋全同粒子基态，零自旋粒子可以处于同一态，与非全同粒子基态相同：
+	$$
+	\psi_{1}\left(r_{1}, r_{2}\right)=\frac{1}{2}\left[\phi_{1}\left(r_{1}\right) \phi_{1}\left(r_{2}\right)+\phi_{1}\left(r_{2}\right) \phi_{1}\left(r_{1}\right)\right]=\phi_{1}\left(r_{1}\right) \phi_{1}\left(r_{2}\right)
+	$$
+	\item 
+	自旋为 $\frac{1}{2}$ 的全同粒子需满足泡利不相容原理, 由于 $a>b>c$，故第一激发态为
+	$$
+	\phi_{2}(r)=\frac{2 \sqrt{2}}{\sqrt{a b c}} \sin \frac{2 \pi x}{a} \sin \frac{\pi y}{b} \sin \frac{\pi z}{c}
+	$$
+	$$
+	\psi_{1}\left(r_{1}, r_{2}\right)=\frac{1}{\sqrt{2}}\left[\phi_{1}\left(r_{1}\right) \phi_{2}\left(r_{2}\right)-\phi_{2}\left(r_{1}\right) \phi_{1}\left(r_{2}\right)\right]
+ \quad 
+E=\frac{\pi^{2} \hbar^{2}}{m}\left(\frac{5}{2} \cdot \frac{1}{a^{2}}+\frac{1}{b^{2}}+\frac{1}{c^{2}}\right)
+$$
+\end{enumerate}
+\begin{note}
+此题要求只写出空间部分，一般情况下还有自旋部分。当盒子是方盒子即 $a=b=c$ 时，第二激发态$\phi_{2}$ 存在简并，三重，对应的波函数有$ 3 $个。另外波函数的形式随着坐标原点的选择不同而不同（也可将坐标原点选在中心）。
+\end{note}
+
+}
+
+
+
+\item 
+粒子在宽度为$ 2a $的一维无限深势阱中运动
+\[ 
+V(x)=
+\left\{
+\begin{array}{lr}
+	0,&0<x<2a\\
+	\infty, & x\leq 0,x\geq2a
+\end{array}
+\right.
+ \]
+设该体系受到$\hat{H} ^{\prime} =\lambda\delta(x-a)$的微扰作用。
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+利用微扰理论，求第$n$能级精确到二级的近似表达式。
+
+\item 
+指出所得结果的适用条件。
+\end{enumerate}
+
+\banswer{
+无微扰时波函数和能级为
+\[
+\phi_{n}^{(0)}=\sqrt{\frac{1}{a}} \sin \frac{n \pi x}{2 a} \quad E_{n}^{(0)}=\frac{n^{2} \pi^{2} \hbar^{2}}{8 m a^{2}}
+\]
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+第$n$能级精确到二级的近似表达式为：
+\[ 
+	\begin{aligned}
+	E_{n}&=E_{n}^{(0)}+E_{n}^{(1)}+E_{n}^{(2)}\\
+	&=\frac{n^{2} \pi^{2} \hbar^{2}}{8 m a^{2}}+\left\langle\psi_{n}^{0}\left|H^{\prime}\right| \psi_{n}^{0}\right\rangle+\sum_{k} {}^{\prime} \frac{\left|H_{k n}^{\prime}\right|^{2}}{E_{n}^{0}-E_{k}^{0}}
+\end{aligned}
+ \]
+ 当$ n $为奇数的时候
+ \[ 
+ E_{n}=\frac{n^{2} \pi^{2} \hbar^{2}}{8 m a^{2}} + 0+0
+  \]
+  当$ n $为偶数的时候
+ \[ 
+ E_{n}=\frac{n^{2} \pi^{2} \hbar^{2}}{8 m a^{2}} + \frac{\lambda}{a}+\frac{8 m \lambda^{2}}{\pi^{2} \hbar^{2}}\left[\frac{1}{n^{2}-1}+\frac{1}{n^{2}-n^{3}}+\frac{1}{n^{2}-5^{2}}+\cdots\right]
+  \]
+  	其中：
+  \begin{equation*}\label{key}
+  	\begin{aligned}
+  		H_{k n}^{\prime}&=\left\langle\phi_{k}^{0}\left|H^{\prime}\right| \phi_{n}^{0}\right\rangle=\frac{\lambda}{a} \int_{0}^{2 a} \delta(x-a) \sin \frac{k \pi x}{2 a} \sin \frac{n \pi x}{2 a} d x
+  		\\
+  		&=\frac{\lambda}{a} \sin \frac{k \pi}{2} \sin \frac{n \pi}{2}=\left\{\begin{array}{lc}
+  			n \text { 为偶数 }, k \neq n, & 0 \\
+  			n \text { 为奇数 }, k \text { 为奇数, } k \neq n, & \frac{\lambda}{a} \\
+  			n \text { 为奇数 }, k \text { 为偶数, } k \neq n, & 0
+  		\end{array}\right.
+  	\end{aligned}
+  \end{equation*}
+\item 
+适用条件：$\left|\frac{H_{k n}^{\prime}}{E_{n}^{0}-E_{k}^{0}}\right| \ll 1$ 即: $\left|\frac{\frac{\lambda}{a}}{E_{n}^{0}-E_{k}^{0}}\right| \ll 1$,  $\lambda$ 很小，能级无简并或无近似简并。	
+\end{enumerate}
+
+
+}
+
+
+
+\end{enumerate}
+
+

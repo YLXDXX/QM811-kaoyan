@@ -1,0 +1,268 @@
+\bta{2016}
+
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	一个质量为 $m$ 的粒子限制在半径为 $a$ 的圆周上运动。
+	\begin{enumerate}
+		%\renewcommand{\labelenumi}{\arabic{enumi}.}
+		% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+		%设定全局标号series=example	%引用全局变量resume=example
+		%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+		%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+		\item
+		求相应的本征值和本征函数。
+		\item 
+		$t=0$ 时， $\Psi=A \sin ^{2} \theta $，其中$ \theta $为极角， $ A $为归一化因子，求 $\mathrm{t}$ 时刻的波函数 $\Psi(t)$。 
+		\item 
+		求 $t$ 时刻垂直于圆周角动量的平均值。
+		
+		
+		
+	\end{enumerate}
+
+
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	波函数：$\psi_{n}(\varphi)=\frac{1}{\sqrt{2 \pi}} e^{i n \varphi}$；能量本征值：$E_{n}=\frac{\hbar^{2}}{2 m a^{2}} n^{2}$。其中$n=0, \pm 1, \pm 2 \ldots$
+	\item 
+	将波函数分解成能量本征态可得：
+	\[ 
+	\psi(\theta, t)=\sqrt{\frac{2}{3}} \cdot \frac{1}{\sqrt{2\pi}} -\frac{1}{\sqrt{6}} \cdot \frac{1}{\sqrt{2\pi}} e^{i2\theta} \cdot e^{-i \frac{E_{2}}{\hbar}t} -\frac{1}{\sqrt{6}} \cdot \frac{1}{\sqrt{2\pi}} e^{-i2\theta} \cdot e^{-i \frac{E_{2}}{\hbar}t}
+	\]
+	\item 
+	能量本征态也是 $\hat{L}_{z}$ 本征态: $\hat{L}_{z} \psi_{n}=n \hbar \psi_{n}$，得$ \bar{l}_{z}=0 $
+	
+\end{enumerate}	
+}
+
+\item 
+已知一质量为 $m$ 的粒子处于 $\delta$ 势阱中, $\mathrm{V}(x)=-V_{0} \delta(x),\left(V_{0}>0\right)$ 中运动。
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	求束缚态能量粒子，以及归一化的束缚态波函数。
+	\item 
+	利用 Feynman-Hellmann 定理和 virial 定理, 求束缚态粒子的平均动能和平均势能。
+	
+	
+	
+\end{enumerate}
+
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	体系只存在一个束缚态，且是偶宇称态
+	\[ 
+	\psi(x)=\left\{\begin{tblr}{ll}
+		\frac{\sqrt{m V_{0}}}{\hbar} e^{+k x}, & x<0 \\
+		\frac{\sqrt{m V_{0}}}{\hbar} e^{-k x}, & x>0
+	\end{tblr}\right.
+	 \]
+束缚态能量为$E=-\frac{m V_{0}^{2}}{2 \hbar^{2}}$	
+	
+\item 
+动能平均值：$\bar{T}=\frac{m V_{0}^{2}}{2 \hbar^{2}}$；势能平均值：$\bar{V}=-\frac{m V_{0}^{2}}{\hbar^{2}}$。
+
+\begin{note}
+	这里利用$\bar{V}+\bar{T}=\bar{E}$，可以分别用两个定理各自独立求解出来。
+\end{note}	
+	
+\end{enumerate}
+
+
+
+
+}
+
+\item 
+二维各向同性谐振子系统哈密顿算符为$\mathrm{H}_{0}=-\frac{\hbar^{2}}{2 m}\left(\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}\right)+\frac{1}{2} m \omega^{2}\left(x^{2}+y^{2}\right)$。
+设谐振子又受到微扰作用，总哈密顿量变成 $\mathrm{H}=H_{0}+H^{\prime}, H^{\prime}=\lambda\left(x y+y^{2}\right) $（$\lambda$ 是小常数）。
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+写出 $\mathrm{H}_{0}$ 的第 $\mathrm{n}$ 级激发态能量及其简并度。
+\item 
+求 $\mathrm{H}_{0}$ 基态能量的一级微扰修正。
+
+\item 
+求 $\mathrm{H}_{0}$ 第一激发态能量的一级微扰修正。
+	
+
+
+	
+\end{enumerate}
+提示: 一维情况下有 $\left\langle\mathrm{n}_{\mathrm{x}}^{\prime}|\hat{x}| n_{x}\right\rangle=\sqrt{\frac{\hbar}{2 m \omega}}\left(\sqrt{n_{x}+1} \delta_{n_{x}^{\prime},n_{x}+1}+\sqrt{n_{x}} \delta_{n_{x}^{\prime},n_{x}-1}\right)$。
+
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	$E_{n}^{(0)}=(n+1) \hbar \omega$，$n=n_{1}+n_{2}=0,1,2 \ldots$，简并度为$f_{n}=n+1$。
+	\item 
+	$E_{0}=E_{0}^{(0)}+E_{0}^{(1)}=\hbar\omega+\frac{\lambda \hbar}{2 m \omega}$
+	\item 
+	微扰矩阵为
+	\[ 
+	 H ^{\prime} = \frac{\lambda \hbar}{2m\omega}\commamatrix[p]{3,1; 1,1}
+	 \]
+	$ E_{1}^{(1)}=\frac{\lambda \hbar}{2m\omega} (2\pm\sqrt{2}) $，能级分裂为两条：
+	\begin{enumerate}
+		%\renewcommand{\labelenumi}{\arabic{enumi}.}
+		% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+		%设定全局标号series=example	%引用全局变量resume=example
+		%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+		%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+		\item
+		$ E_{11}=2\hbar \omega +\frac{\lambda \hbar}{2m\omega} (2-\sqrt{2}) $；
+		\item 
+		$ E_{12}=2\hbar \omega +\frac{\lambda \hbar}{2m\omega} (2+\sqrt{2}) $
+		
+		
+	\end{enumerate}
+	
+	
+\end{enumerate}
+
+
+}
+
+\newpage
+\item 
+已知一粒子自旋为 $1 / 2$ 、磁矩为 $\mu$ 的粒子置于 $\mathrm{z}$ 方向的恒定磁场
+$\mathrm{B}=B_{0}=\left(0,0, \mathrm{B}_{0}\right)$ 中。系统哈密顿算符 $\mathrm{H_{0}}=-\mu B \cdot \sigma$, 其中 $\sigma$ 为泡利矩阵。
+$t<0$ 时粒子处于基态。 设系统再受到 $x$ 方向的微小脉冲磁场 $\mathrm{B}_{1}=\left(\mathrm{B}_{1}, 0,0\right) \delta(\mathrm{t})$ 作用。请
+使用微扰（一级近似）进行计算:
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+\item
+粒子 $t>0$ 时处于激发态的概率和仍处于基态的概率。
+\item
+粒子 $t>0$ 时的波函数。
+\item
+粒子 $t>0$ 时分别处于 $\sigma_{x}$ 的两个本征态的概率（精确到 $B_{1}$ 的平方阶）。
+
+	
+\end{enumerate}
+
+
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	$ \sigma_{z} $表象：基态$ \ket{\psi_1}=\commamatrix[b]{1; 0} $，$ E_{1}=-\mu B_{0} $；激发基态$ \ket{\psi_2}=\commamatrix[b]{0; 1} $，$ E_{2}=+\mu B_{0} $。\\
+	$t>0$ 时刻处在激发态的概率为 $ P_{12}(t)=\left(\frac{\mu B_{1}}{\hbar}\right)^{2}$；仍处在基态的概率$ P_{11}(t)=1-\left(\frac{\mu B_{1}}{\hbar}\right)^{2}$
+	\item 
+	波函数
+	\[ 
+	\ket{\psi(t)} = \sqrt{1-\left(\frac{\mu B_{1}}{\hbar}\right)^{2}} \cdot  e^{-i\frac{E_{1}}{\hbar} t} \ket{\psi_1} +i\frac{\mu B_{1}}{\hbar} e^{-i\frac{E_{2}}{\hbar} t} \ket{\psi_2}
+	 \]
+\item 
+$\sigma_{x}=-1$	态的概率为
+\[ 
+\begin{aligned}
+P_{-1}&= \frac{1}{2} \left| \sqrt{1-\left(\frac{\mu B_{1}}{\hbar}\right)^{2}} \cdot  e^{-i\frac{E_{1}}{\hbar} t}  +i\frac{\mu B_{1}}{\hbar} e^{-i\frac{E_{2}}{\hbar} t}   \right|^{2}\\
+&= \frac{1}{2} \left(  1+2\frac{\mu B_{1}}{\hbar} \sqrt{1-\left(\frac{\mu B_{1}}{\hbar}\right)^{2}}  \cdot \sin \frac{E_{2}-E_{1}}{\hbar}t   \right)\\
+&\approx \frac{1}{2} \left(  1+2\frac{\mu B_{1}}{\hbar}  \cdot \sin \frac{E_{2}-E_{1}}{\hbar}t   \right)\\
+&= \frac{1}{2} +\frac{\mu B_{1}}{\hbar}  \cdot \sin \frac{2\mu B_{0}}{\hbar}t	
+\end{aligned}
+ \]
+其中用到了$ (1+x)^{ \alpha }=1+ \alpha x $ 近似。得到$\sigma_{x}=+1$	态的概率为
+ \[ 
+ P_{+1}= \frac{1}{2} -\frac{\mu B_{1}}{\hbar}  \cdot \sin \frac{2\mu B_{0}}{\hbar}t
+  \]
+ 
+\end{enumerate}
+
+	
+}
+
+\item 
+考虑原子中处于同一个单电子能级 $E_{n l}$ 上的两个电子, 以 $l_{1} $、$ s_{1}$ 及
+$l_{2}$、$ s_{2}$ 分别表示电子$  1 $、$ 2 $ 的轨道角动量算符和自旋角动量算符, 则总轨道角动量 算符 $\mathrm{L}=l_{1}+l_{2}$, 总自旋算符 $\mathrm{S}=s_{1}+s_{2}$。
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	写出总轨道角动量量子数 $\mathrm{L}$ 的可取值。
+	\item 
+	写出总自旋角动量量子数 $S$ 的可取值, 并求出 $\mathrm{S}^{2}$ 和 $\mathrm{S}_{z}$ 的共同本征态。
+	\item 
+	根据两个电子的全同性，讨论 $\mathrm{L}+\mathrm{S}$ 的奇偶性。
+	
+	
+	
+\end{enumerate}
+
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	$\mathrm{L}=l_{1}+l_{2}$，$ L $可能的取值为$L=0,1,2, \ldots, 2 l$
+	\item 
+	$S=s_{1}+s_{2}$，$ S $可能的取值为$ 0,1 $。
+	$\mathrm{S}^{2}$ 和 $\mathrm{S}_{z}$ 的共同本征态$ \ket{sm} $有四个：
+	\[ 
+	\begin{tblr}{ll}
+		|1,1\rangle&=|\uparrow \uparrow\rangle\\
+		|1,0\rangle&=\frac{1}{\sqrt{2}}(|\uparrow \downarrow\rangle+|\downarrow \uparrow\rangle)\\
+		|1,-1\rangle&=|\downarrow \downarrow\rangle\\
+	|0,0\rangle &=\frac{1}{\sqrt{2}}(|\uparrow \downarrow\rangle-|\downarrow \uparrow\rangle) 
+	\end{tblr}
+	 \]
+\item 
+利用$ C-G $系数关于交换的关系式
+\[ 
+\braket{j_{1}m_{1}j_{2}m_{2}|j_{3}m_{3}}=(-1)^{j_{1}+j_{2}-j_{3}}\braket{j_{2}m_{2}j_{1}m_{1}|j_{3}m_{3}}
+ \]	
+由于$ l_{1}=l_{2}=l $，故当$ L $为偶数时，空间部分关于两个粒子交换对称；	当$ L $为奇数时，空间部分关于两个粒子交换反对称。可得$\mathrm{L}+\mathrm{S}$ 为偶数。
+\end{enumerate}
+
+	
+}
+
+
+
+\end{enumerate}

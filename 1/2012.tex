@@ -1,0 +1,205 @@
+\bta{2012}
+
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	（共 30 分）
+	质量为 $\mu$ 的粒子在一维无限深势阱中运动, 势能
+	$$
+	V=\left\{\begin{aligned}
+		&0, & 0 \leq x \leq a \\
+		&\infty, & x<0 \text { 或 } x>a
+	\end{aligned}\right.
+	$$
+	\begin{enumerate}
+		%\renewcommand{\labelenumi}{\arabic{enumi}.}
+		% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+		%设定全局标号series=example	%引用全局变量resume=example
+		%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+		%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+		\item
+		求粒子的能级和归一化波函数。
+		\item 
+		画出处于第二、第三激发态的粒子的概率密度的示意图。
+		\item 
+		求坐标算符在能量表象下的矩阵元。
+		
+		
+		
+	\end{enumerate}
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	在$ 0\leq x \leq a $区域$ \psi_{n}(x)=\sqrt{\frac{2}{a}} \sin \frac{n\pi}{a}x $，其它区域为零。能量$ E_{n}=\frac{n^{2} \pi^{2} \hbar^{2}}{2 m a^{2}} $
+	\item 
+	第二激发态，$ \rho_{2}=\frac{2}{a} \sin ^{2} \frac{3 \pi}{a} x $，第三激发态，$ \rho_{3}=\frac{2}{a} \sin ^{2} \frac{4 \pi}{a} x $，图略。
+	\item 
+	$ n\neq m $：
+	$ \braket{n|\hat{x}| m}=\frac{a}{\pi^{2}}\left[\frac{(-1)^{m-n}-1}{(m-n)^{2}}-\frac{(-1)^{m+n}-1}{(m+n)^{2}}\right] $；$ n=m $：$ \braket{n|\hat{x}| n}=\frac{a}{2} $
+	
+	
+\end{enumerate}
+
+	
+}
+	
+\item 
+（共 30 分）
+质量为 $\mu$ 的一维谐振子, 带电量为 $q$， 初始 $t=-\infty$ 时处于基态 $ \ket{0}$。 设
+加上微扰 $H^{\prime}=-q E x \exp \left(-\frac{t^{2}}{\tau^{2}}\right)$, 其中 $E$ 为外电场强度， $\tau$ 为参数。求 $t=+\infty$ 时 谐振子仍停留在基态的概率。
+
+\banswer{
+$ \braket{m|H ^{\prime} |0} =-qEe^{-\frac{t^{2}}{\tau^{2}}} \cdot \frac{1}{\sqrt{2} } \sqrt{\frac{\hbar}{\mu\omega}} \delta_{m1}  $，跃迁到$ \ket{m} $态的系数为
+\[ 
+	\begin{aligned}
+	a_{m}(t)&=\frac{1}{i\hbar} \left( -\frac{qE}{\sqrt{2} } \sqrt{\frac{\hbar}{\mu\omega}}  \right)  \delta_{m1} \int_{-\infty}^{+\infty} e^{-\frac{t^{2}}{\tau^{2}} +i \omega_{m0} t } dt\\
+	&=\frac{1}{i\hbar} \left( -\frac{qE}{\sqrt{2} } \sqrt{\frac{\hbar}{\mu\omega}}  \right)  \delta_{m1}   \cdot \tau e^{-\frac{\omega_{m0}^{2} \tau^{2}}{4}} \cdot \sqrt{\pi} 
+\end{aligned}
+ \]
+故只可能跃迁到$ \ket{1} $，在$t=+\infty$仍然停留在基态的概率为（注意到$ \omega_{10}=\omega  $）
+\[ 
+	\begin{aligned}
+P_{0}&=1-a^{*}a=1-\frac{q^{2}E^{2}\tau^{2}}{\mu\omega_{10} \hbar} \cdot \frac{\pi}{2} \cdot e^{-\frac{\omega_{10}^{2}\tau^{2}}{2}}\\
+&=1-\frac{q^{2}E^{2}\tau^{2}}{\mu\omega \hbar} \cdot \frac{\pi}{2} \cdot e^{-\frac{\omega^{2}\tau^{2}}{2}}
+\end{aligned}
+ \]
+}
+
+\item 
+（共 30 分）
+设一转动惯量为 $I$ 、电偶极矩为 $D$ 的转子自由地在 $X-Y$ 平面内
+转动， 相对$ X $轴正向的转角为 $\varphi$ 。
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+试求其能量本征值和本征态。
+\item 
+设沿 $\mathrm{X}$ 方向加上电场 $ \mathscr{E}$, 即微扰哈密顿量为 $H^{\prime}=-D \mathscr{E} \cos \varphi$,	试用微扰论求其
+基态能量的一级和二级微扰修正。
+\end{enumerate}
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	$ \psi(\varphi)=\frac{1}{\sqrt{2 \pi}} e^{i m \varphi} \quad E_{m}=\frac{m^{2} \hbar^{2}}{2 I} $
+	
+	\item 
+	易知$ E_{0}^{(1)}=0 $。而
+	\[ \braket{m|H ^{\prime} |0}=\frac{1}{2\pi} \cdot (-D \mathscr{E}) \cdot \int_{0}^{2\pi} \cos m \varphi \cos \varphi d\varphi \]
+	只有当$ m=\pm1 $时才不为零，故$ E_{0}^{(2)}=-\frac{D^{2}\mathscr{E}^{2}I}{\hbar^{2}} $
+	
+\end{enumerate}
+
+
+}
+
+
+\newpage
+\item 
+（共 30 分）
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+写出角动量算符的三个分量 $J_{x} $、$ J_{y} $、$ J_{z}$ 相互间满足的所有对易关系。
+	\item 
+	试利用这些对易关系, 证明矩阵元 $\left\langle m\left|J_{x}\right| n\right\rangle$ 仅当 $m=n \pm 1$ 时不为零。其中 $|m\rangle$ 、 $|n\rangle$ 分别为 $J_{z}$ 的本征值为 $m \hbar $、$ n \hbar$ 的本征态。
+	
+	\item 
+	设角动量量子数 $j=1$ 。 已知在 $J_{z}$ 的某一个本征态 $|m\rangle$ 中, $J_{x}$ 取值为 0 的概 率为 $1 / 2$。求 $J_{x}$ 取值为 $-\hbar$ 的概率。
+	
+\end{enumerate}
+
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	对易关系略
+	\item 
+	证明略
+	\item 
+	$ P_{-1}=\frac{1}{4} $
+\end{enumerate}
+
+
+}
+\item 
+（共 30 分）
+氢原子的哈密顿量为 $H_{0}=\frac{p^{2}}{2 \mu}-\frac{e^{2}}{r} $， 基态波函数及基态能量为
+$$
+\psi_{0}(r)=\frac{1}{\sqrt{\pi a_{0}{ }^{3}}} e^{-\frac{r}{a_{0}}} \qquad  E_{0}=-\frac{e^{2}}{2 a_{0}}=-\frac{\mu e^{4}}{2 \hbar^{2}}
+$$
+其中 $a_{0}=\frac{\hbar^{2}}{\mu e^{2}}$ 为第一 Bohr 轨道半径。
+设体系受到微扰 $H^{\prime}=e \varepsilon z$ 的作用（沿 $z$ 方向加上均匀电场 $\varepsilon$ ), 哈密顿量变成 $H=H_{0}+H^{\prime}$。
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	计算对易关系: $\left[H_{0}, H^{\prime}\right]$ 及 $\left[H^{\prime},\left[H_{0}, H^{\prime}\right]\right]$ 。
+	\item 
+	计算 $\psi_{0}$ 下的平均值： $\left\langle H^{\prime}\right\rangle_{0}$ 及 $\left\langle H^{\prime 2}\right\rangle_{0}$ 。
+	\item 
+	取基态试探波函数为 $\psi(\lambda)=N\left(1+\lambda H^{\prime}\right) \psi_{0}$, 其中 $N$ 为归一化常数。试以 $\lambda$ 为
+	变分参数，用变分法求$  H  $的基态能量上限（准确到
+$\varepsilon^{2}$量级）。
+	
+	
+\end{enumerate}
+
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	$\left[H_{0}, H^{\prime}\right]=-i \hbar \frac{e \varepsilon }{\mu} p_{z}$，$\left[H^{\prime},\left[H_{0}, H^{\prime}\right]\right]=\frac{e^{2} \varepsilon ^{2} \hbar ^{2}}{\mu}$ 
+	\begin{note}
+		这里直接采用直角坐标系运算，采用球坐标系反而麻烦了。球坐标系下的结果是
+		\[ 
+		\left[H_{0}, H^{\prime}\right]=-\frac{e \varepsilon \hbar^{2}}{\mu} (\cos \theta \frac{\partial }{\partial r} -\frac{1}{r} \sin \theta \frac{\partial}{\partial \theta} )
+		 \]
+	\end{note}
+	\item 
+	$ \braket{0|H ^{\prime} |0}=0 $，$  \braket{0|{H ^{\prime}}^{2} |0}=e^{2}\varepsilon^{2}a_{0}^{2} $
+	\item 
+	%算力消耗殆尽，后面再算
+	$E=E_{0}+2 \varepsilon^{2} a_{0}^{3}$
+\end{enumerate}
+
+	
+}
+
+
+
+
+\end{enumerate}
+

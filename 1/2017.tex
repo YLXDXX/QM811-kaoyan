@@ -1,0 +1,211 @@
+\bta{2017}
+
+
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	(共30分)一个粒子在一维无限深势阱
+	$$
+	V(x)=\left\{\begin{array}{cc}
+		0 & 0<x<a \\
+		\infty & x<0, x>a
+	\end{array}\right.
+	$$
+	中运动,其势阱内定态波函数为$\psi_{n}(x)=\sqrt{\frac{2}{a}} \sin \frac{n \pi x}{a}$。
+	设$ t=0 $时刻粒子势阱内的波
+	函数为$\Psi(x, 0)=A x(a-x)$
+	\begin{enumerate}
+		%\renewcommand{\labelenumi}{\arabic{enumi}.}
+		% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+		%设定全局标号series=example	%引用全局变量resume=example
+		%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+		%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+		\item
+		求归一化常数$ A $。
+		
+		\item 
+		求$ t>0 $时刻粒子的波函数$ \Psi(x,t) $。
+		
+		\item 
+		求$ t>0 $时刻粒子处于系统基态及第一激发态的概率。
+		
+		\item 
+		计算$ t>0 $时刻粒子位置的平均值。（提示：$\sum\limits_{\mathstrut m=1}^{\mathstrut \infty} \dfrac{1}{(2 m-1)^{6}}=\dfrac{\pi^{6}}{960}$）
+	
+		
+		
+		
+		
+		
+		
+	\end{enumerate}
+	
+	
+\item 
+(共$ 30 $分)一个能量为$ E $的粒子,沿$ x $轴从左侧入射。阶梯势垒为
+$$
+V(x)=\left\{\begin{array}{ll}
+	0, & x<0 \\
+	V_{a}, & 0<x<a \\
+	V_{b}, & x>a
+\end{array}\right.
+$$
+如图所示。
+\begin{figure}[h!]
+	\centering
+	\includesvg[width=0.33\linewidth]{picture/svg/811-001}
+\end{figure}
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	取入射波函数为$\psi_{i}(x)=e^{i k_{1} x}$,  $k_{1}=\sqrt{\frac{2 m E}{\hbar^{2}}}$,求入射粒子流密度。
+	
+	\item 
+	选择题:若$ E=V_{b} $,透射系数$ T $是多少?
+\threechoices
+{$1$}
+{$0<T<1$}
+{$0 $}
+
+\item 
+选择题:要增大透射系数$ T $,以下哪种做法是正确的?
+
+
+\threechoices
+{$ V_{b} =E $,减小$ V_{a} $,但保持$ V_{b}<V_{a} $}
+{减小$ V_{b}( V_{b} <E) $,但保持$ V_{a} $不变}
+{$ V_{b} =E $,减小$ V_{a} $,使$ V_{a}< V_{b} $}
+
+
+\item 
+选择题:设$ E>V $,反射波函数为$\psi_{r}(x)=B e^{-i k_{1} x}$ ,透射波函数为$\psi_{t}(x)=C e^{i k_{2} x}$，其中$k_{1}=\sqrt{\frac{2 m E}{\hbar^{2}}},  k_{2}=\sqrt{\frac{2 m\left(E-V_{b}\right)}{\hbar^{2}}}$。问透射系数$ T $是多少?
+
+\threechoices
+{$ |C|^{2} $}
+{$1-|B|^{2}$}
+{以上都不是}
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+\end{enumerate}
+
+
+\item 
+(共30分)
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+设质量为$ m $的粒子在一维势场$ V(x) $运动,试证明  Ehrenfest 定理:
+$$\left\{\begin{aligned}
+	\frac{d}{d t}\langle x\rangle&=\frac{\langle p\rangle}{m} \\ \frac{d}{d t}\langle p\rangle&=-\left\langle\frac{\partial V}{\partial x}\right\rangle
+\end{aligned}\right.$$
+其中，$\langle F\rangle=\int \psi^{*}(x, t) F(x, p) \psi(x, t) d x$表示算符$ F $的平均值。
+
+\item 
+设二维各向异性谐振子在均匀电场$\left(\varepsilon_{x}, \varepsilon_{y}\right)$中运动,哈密顿量为
+$$
+H=\frac{p_{r}^{2}}{2 m}+\frac{p_{y}^{2}}{2 m}+\frac{1}{2} m \omega_{x}^{2} x^{2}+\frac{1}{2} m \omega_{y}^{2} y^{2}-q\left(\mathcal{E}_{x} x+\mathcal{E}_{y} y\right)
+$$
+$ 2 \ m^{2}m2 $
+其中$ q $为粒子电荷。试写出无电场情形下体系的束缚态能级,并以$ q $为参数用
+Hellmann-Feynman 定理计算存在电场情形下体系的束缚态能级。
+
+
+
+
+	
+\end{enumerate}
+
+\banswer{
+	
+}
+
+	
+\item 	
+(共30分)设哈密顿算符的矩阵表示为$H=H_{0}+\lambda H^{\prime}$，
+$H_{0}=\left(\begin{array}{cc}E_{1} & 0 \\ 0 & E_{2}\end{array}\right)$， $H^{\prime}=\left(\begin{array}{cc}0 & i a \\ -i a & 0\end{array}\right)$，
+其中$E_{1}<E_{2}$，$\left|\frac{\lambda a}{E_{2}-E_{1}}\right|<<1$。
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+以$ \lambda H ^{\prime}  $作为微扰,用微扰论求$ H $的准确至二级的本征值以及准确至一级的归一化本征矢。
+	
+	
+\item 
+精确求解$ H $的本征值,并与近似结果比较。
+
+
+	
+	
+	
+	
+\end{enumerate}
+
+
+\banswer{
+	
+}
+
+
+
+\item 
+(共30分)电子$ 1 $和$ 2 $分别局域于两个空间格点上。设体系哈密顿量为
+$$
+H=-2 C\left(s_{x}^{(1)} s_{x}^{(2)}+s_{y}^{(1)} s_{y}^{(2)}\right)
+$$
+其中, $\vec{s}^{(i)} (i=1,2)$为自旋算符,$ C $是一个常数。令$ \hbar=1 $。
+
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+写出体系的总自旋$\vec{s}=\vec{s}^{(1)}+\vec{s}^{(2)}$的平方算符$\vec{s}^{2}$和$S_{z}=S_{z}^{(1)}+S_{z}^{(2)}$的可取值。
+
+\item 
+用$\vec{s}^{2}$和$ s_{z} $表示体系的哈密顿量。
+
+\item 
+求出体系所有能级的能量。
+
+\item 
+沿$ z $方向施加一磁场,强度为$ B $,求出体系所有能级的能量。
+
+
+\end{enumerate}
+
+
+\banswer{
+	
+}
+
+	
+\end{enumerate}
+

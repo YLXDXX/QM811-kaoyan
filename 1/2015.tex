@@ -1,0 +1,284 @@
+\bta{2015}
+
+
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	质量为 $\mu$ 的粒子限制在长度为 $L$ 的一维匣子 $(0<x<L)$ 中自由运动, 在 $x=0$ 与 $x=L$ 处其定态波函数满足 条件 $\Psi(0)=\Psi(L),  \Psi^{\prime}(0)=\Psi^{\prime}(L)$。
+	\begin{enumerate}
+		%\renewcommand{\labelenumi}{\arabic{enumi}.}
+		% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+		%设定全局标号series=example	%引用全局变量resume=example
+		%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+		%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+		\item
+		求体系能级；
+		\item
+		将第一激发态归一化波函数表示为动量本征态的线性组合,并求动量平均值$ \bar{p} $为$ 0 $时组合系数满足的条件。
+		
+		
+		
+		
+	\end{enumerate}
+	
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	可将方程的解表示为
+	\[ 
+	\psi(x)=A \sin kx + B \cos kx
+	 \]
+	这里最终只能得到$ kL=2n\pi $，系数$ A $和$ B $定不出来，说明这个体系的能量本征态存在简并情况。另外，关于$ n $的取值范围为$ n=0,\pm 1, \pm 2 ,\pm 3,,\cdots $。能量为
+	\[ 
+	E_{n}=\frac{\pi^{2} \hbar^{2}}{2 m L^{2}}(2 n)^{2}
+	 \]
+\item 
+第一激发态$ n=\pm 1 $，$ k=\pm \frac{2\pi}{L} $，利用欧拉关系式，波函数可为
+\[ 
+\psi(x)=c_{1} e^{ikx} + c_{2}e^{-ikx}
+ \]
+得到系数关系为$\left|c_{1}\right|=\left|c_{2}\right|=\frac{1}{\sqrt{2}}$。	
+\end{enumerate}
+
+
+}
+
+\item 
+粒子在球对称谐振子势阱 $V(r)=\frac{1}{2} \mu \omega^{2}\left(x^{2}+y^{2}+z^{2}\right)$ 中运动, 受到微扰作用
+\[ 
+H^{\prime}=\lambda\left(x y z+x^{2} y+x y^{2}\right)
+ \]
+其中 $\lambda$ 为常数。求准确到二级微扰修正的基态能量。\\
+提示：粒子数表象下, $ \left\langle n_{x}^{\prime}|\hat{x}| n_{x}\right\rangle=\sqrt{\frac{\hbar}{2 \mu \omega}}\left(\sqrt{n_{x}+1} \delta_{n_{x}^{\prime}, n_{x}+1}+\sqrt{n_{x}} \delta_{n_{x}^{\prime}, n_{x}-1}\right) )$。
+	
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	设$ \ket{\psi}=\ket{n_{x}n_{y}n_{z}} $，$ E_{n}=\left(n_{x}+n_{y}+n_{z}+\frac{3}{2}\right) \hbar \omega $。\\
+	 ①显然$ \braket{000|H ^{\prime} |000}=0 $\\
+	②矩阵元$ \braket{n_{x}n_{y}n_{z}|H ^{\prime} |000}$不为零的情况如下
+	\[ 
+	\begin{tblr}{c}
+		\hline
+		\braket{111|xyz|000}& \braket{010|x^{2}y |000}&\braket{210|x^{2}y|000} & \braket{001|xy^{2} |000} & \braket{120|xy^{2}|000}\\
+		\hline
+	\end{tblr}
+	 \]
+基态能量的二级修正为$ E= \frac{3}{2}\hbar\omega -\frac{11(\lambda \hbar)^{2}}{24 \mu^{3} \omega^{4}} $	
+\end{enumerate}
+
+
+}
+
+
+\item 
+两个自旋为 $\frac{1}{2}$ 的粒子组成的体系, $\hat{\boldsymbol{S}}_{\mathbf{1}}$ 和 $\hat{\boldsymbol{S}}_{\mathbf{2}}$ 分别表示两个粒子的自旋算符, $\hat{\boldsymbol{S}}$ 为两粒子的总自旋算符, $\hat{\boldsymbol{n}}$ 表 示两粒子相对运动方向的单位矢量。设系统的相互作用哈密顿量为 $H=3\left(\hat{\boldsymbol{S}}_{\mathbf{1}} \cdot \hat{\boldsymbol{n}}\right)\left(\hat{\boldsymbol{S}}_{\mathbf{2}} \cdot \hat{\boldsymbol{n}}\right)-\hat{\boldsymbol{S}}_{1} \cdot \hat{\boldsymbol{S}}_{2}$。
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	证明：
+	\begin{enumerate}
+		%\renewcommand{\labelenumi}{\arabic{enumi}.}
+		% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+		%设定全局标号series=example	%引用全局变量resume=example
+		%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+		%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+		\item
+		$\hat{\boldsymbol{S}}_{1} \cdot \hat{\boldsymbol{S}}_{2}=\frac{1}{2} \hat{\boldsymbol{S}}^{2}-\frac{3}{4} \hbar^{2}$
+		\item 
+		$\left(\hat{\boldsymbol{S}}_{\mathbf{1}} \cdot \hat{\boldsymbol{n}}\right)\left(\hat{\boldsymbol{S}}_{\mathbf{2}} \cdot \hat{\boldsymbol{n}}\right)=\frac{1}{2}(\hat{\boldsymbol{S}} \cdot \hat{\boldsymbol{n}})^{2}-\frac{1}{4} \hbar^{2}$
+		
+		
+		
+	\end{enumerate}
+	
+	
+\item 
+证明 $\left[H, \hat{\boldsymbol{S}}^{\mathbf{2}}\right]=0$	
+	
+	
+\end{enumerate}
+
+
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	证明略。其中会遇到$ (\hat{S_{1}} \cdot \hat{n}  )^{2} $的表达式。处理这个有两种方法：①利用$ S_{1}=\frac{\hbar}{2} \sigma_{1} $；②利用$ \hat{S_{1}} \cdot \hat{n}  $的本征值。得到
+	\[ (\hat{S_{1}} \cdot \hat{n}  )^{2} = \frac{1}{4} \hbar^{2} \]
+	
+	\item 
+	证明略
+	
+\end{enumerate}
+
+	
+}
+
+
+
+\newpage
+\item 
+质量为 $\mu$ 的粒子在一维势 $V(x)=\left\{\begin{array}{ll}\infty & x<0 \\ B x & x>0\end{array}\right.$ 中运动, 其中 $B>0$ 是常数。
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	试从下列波函数中选择一个合理的束缚态试探波函数, 并说明理由。
+\threechoices
+{$e^{-\frac{x}{a}}$}
+{$x e^{-\frac{x}{a}}$}
+{$1-e^{-\frac{x}{a}}$}
+其中 $a>0$ 为变分参数。
+
+\item 
+取所选的试探波函数，用变分法估算体系基态能量。
+
+	
+	
+	
+\end{enumerate}
+
+
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	选$x e^{-\frac{x}{a}}$，理由略。
+	\item 
+	先归一化：
+	\[ 
+	\psi=\left\{\begin{aligned}
+		&0 & x<0 \\
+		&\frac{2}{\sqrt{a^{3}}} x e^{-x / a} & x \geq 0
+	\end{aligned}\right.
+	 \]
+	得到
+	\[ 
+	E=\frac{\hbar^{2}}{2 \mu a^{2}}+B \frac{3 a}{2}
+	 \]
+	 当$ a=\left(\frac{2 \hbar^{2}}{3 B \mu}\right)^{1 / 3} $时$\frac{\partial E}{\partial a}=0$，此时$E=\frac{9 }{4}\cdot B \cdot \left(\frac{2 \hbar^{2}}{3 B \mu}\right)^{1 / 3}$
+\end{enumerate}
+
+
+}
+
+
+
+\item 
+一个二能级体系, 哈密顿算符的矩阵表达式为 $H_{0}=\left(\begin{array}{cc}E_{1}^{(0)} & 0 \\ 0 & E_{2}^{(0)}\end{array}\right),\left(E_{1}^{(0)}<E_{2}^{(0)}\right) $。 设 $t=0$ 时刻体系处
+于 $H_{0}$ 的基态上, 后受微扰 $H^{\prime}$ 的作用, $H^{\prime}=\left(\begin{array}{cc}0 & \gamma \\ \gamma & 0\end{array}\right), \gamma$ 为常数。
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	求出在 $t>0$ 时刻, 体系处于 $H_{0}$ 激发态的几率 $P_{E_{2}^{(0)}}(t)$ 的精确表达式。
+	\item 
+	利用一阶含时微扰论求 $P_{E_{2}^{(0)}}(t)$, 并与精确表达式比较, 讨论所得结果的适用条件。
+	
+	
+	
+\end{enumerate}
+
+
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	可用含时薛定谔方程解，或者利用$ H=H_{0}+H ^{\prime}  $的本征态来解。
+	\[ 
+	H=\commamatrix[b]{E_{1}^{(0)},\gamma; \gamma,E_{2}^{(0)}}
+	 \]
+本征值为
+\[ 
+\hspace*{-1cm}
+\varepsilon_{1}=\frac{E_{1}^{(0)}+E_{2}^{(0)} - \sqrt{\left(E_{1}^{(0)}-E_{2}^{(0)}\right)^{2}+4\gamma^{2}}}{2}  \quad \varepsilon_{2}=\frac{E_{1}^{(0)}+E_{2}^{(0)} + \sqrt{\left(E_{1}^{(0)}-E_{2}^{(0)}\right)^{2}+4\gamma^{2}}}{2}
+ \]
+$ \varepsilon_{1} $对应的本征态为$ \varphi_{1} $，$ \varepsilon_{2} $对应的本征态为$ \varphi_{2} $
+\[ 
+\varphi_{1}=\left(\begin{aligned}
+	\frac{\gamma}{\sqrt{\left(\varepsilon_{1}-E_{1}^{(0)}\right)^{2}+\gamma^{2}}} \\
+	\frac{\varepsilon_{1}-E_{1}^{(0)}}{\sqrt{\left(\varepsilon_{1}-E_{1}^{(0)}\right)^{2}+\gamma^{2}}}
+\end{aligned}\right)
+ \qquad 
+ \varphi_{2}=\left(\begin{aligned}
+ 	\frac{\gamma}{\sqrt{\left(\varepsilon_{2}-E_{1}^{(0)}\right)^{2}+\gamma^{2}}} \\
+ 	\frac{\varepsilon_{2}-E_{1}^{(0)}}{\sqrt{\left(\varepsilon_{2}-E_{1}^{(0)}\right)^{2}+\gamma^{2}}}
+ \end{aligned}\right)
+ \]
+初态$ \ket{\psi_1}=  \commamatrix[b]{1; 0} $随时间演化为
+\[ 
+\ket{\psi(t)}=a e^{-i \frac{\varepsilon_{1}}{2} t } \varphi_{1}  +be^{-i \frac{\varepsilon_{2}}{2} t } \varphi_{2}
+ \]
+其中$ a=\braket{ \varphi_{1}|\psi_1 } $，$ b=\braket{ \varphi_{2}|\psi_1 } $。处于$ H_{0} $的激发态$ \ket{\psi_{2}}=\commamatrix[b]{0; 1} $的概率为
+\[ 
+\begin{aligned}
+P_{E_{2}^{(0)}}(t)=&\braket{\psi_{2}|\psi(t)} \\
+=&\left|
+\frac{\gamma}{\sqrt{\left(\varepsilon_{1}-E_{1}^{(0)}\right)^{2}+\gamma^{2}}} \cdot
+\frac{\varepsilon_{1}-E_{1}^{(0)}}{\sqrt{\left(\varepsilon_{1}-E_{1}^{(0)}\right)^{2}+\gamma^{2}}} 
+\cdot 
+e^{-i \frac{\varepsilon_{1}}{2} t }
+\right. 
++
+\\
+&\left.
+\frac{\gamma}{\sqrt{\left(\varepsilon_{2}-E_{1}^{(0)}\right)^{2}+\gamma^{2}}} \cdot
+\frac{\varepsilon_{2}-E_{1}^{(0)}}{\sqrt{\left(\varepsilon_{2}-E_{1}^{(0)}\right)^{2}+\gamma^{2}}}
+\cdot
+e^{-i \frac{\varepsilon_{2}}{2} t }
+\right|^{2}
+\end{aligned}
+\]
+
+\item 
+利用一阶含时微扰论计算 $P_{E_{2}^{(0)}}(t)$的结果为
+\[ 
+P_{E_{2}^{(0)}}(t) = \frac{4 \gamma ^{2}}{(E_{2}^{(0)} -E_{1}^{(0)} )^{2}} \sin^{2} \left( \frac{E_{2}^{(0)} -E_{1}^{(0)}}{2\hbar} \right)t
+ \]
+
+\end{enumerate}
+
+	
+}
+
+
+\end{enumerate}
+
+

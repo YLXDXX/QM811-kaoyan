@@ -1,0 +1,312 @@
+ \bta{2013}
+ \begin{enumerate}
+ 	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+ 	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+ 	%设定全局标号series=example	%引用全局变量resume=example
+ 	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+ 	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+ 	\item
+ 	（共30分）
+ 	质量为 $\mu$ 的粒子在一个无限深球方势阱
+ 	$$
+ 	V(r)=\left\{\begin{array}{ll}
+ 		0, & r \leq a \\
+ 		\infty, & r>a
+ 	\end{array}\right.
+ 	$$
+ 	中运动。
+ 	\begin{enumerate}
+ 		%\renewcommand{\labelenumi}{\arabic{enumi}.}
+ 		% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+ 		%设定全局标号series=example	%引用全局变量resume=example
+ 		%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+ 		%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+ 		\item
+ 		写出径向波函数 $R_{l}(r)$ 满足的方程（已知: $\nabla^{2}=\frac{1}{r} \frac{\partial^{2}}{\partial r^{2}} r-\frac{\hat{l}^{2}}{\hbar^{2} r^{2}}$ )。
+ 		\item 
+ 		求其中 $l=0$ 的归一化能量本征函数和能量本征值。
+ 		
+ 		
+ 		
+ 	\end{enumerate}
+ 	
+ 	
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	设波函数为$ \psi=R_{l}(r)Y_{lm}(\theta,\varphi) $，分离变量时产生的常数为$ l(l+1)\hbar^{2} $，得径向波函数为
+	\[ 
+	\frac{\mathrm{d}^{2}}{\mathrm{~d} r^{2}} R_{l}(r)+\frac{2}{r} \frac{\mathrm{d}}{\mathrm{d} r} R_{l}(r)+\left[\frac{2 \mu}{\hbar^{2}}(E-V(r))-\frac{l(l+1)}{r^{2}}\right] R_{l}(r)=0
+	 \]
+	可作变量替换$ R_{l}(r)=\chi_{l}(r) / r $，进一步化简为
+	\[ 
+	\chi^{\prime \prime}{ }_{l}(r)+\left[\frac{2 \mu}{\hbar^{2}}(E-V(r))-\frac{l(l+1)}{r^{2}}\right] \chi_{l}(r)=0
+	 \]	
+\item 
+$ l=0 $时能量本征函数在$ r>a $区域为$ 0 $，在$ r\leq a $区域为
+\[ 
+\psi_{n}=\frac{1}{\sqrt{2a\pi} } \cdot \frac{\sin \frac{n\pi}{a}r}{r}
+ \]	
+能量本征值为
+\[ 
+E_{n}=\frac{n^{2}\pi^{2}\hbar^{2}}{2\mu a^{2}}
+ \]
+其中$ n=1,2,3,\cdots $
+\end{enumerate}
+
+	
+}
+
+ 	
+\item 
+（共30分）考虑一质量为 $m$ 的自由粒子的一维运动。设初始 $(t=0)$ 时刻波函
+数为 $\psi(x, 0)=\left(\frac{\alpha}{\pi}\right)^{1 / 4} e^{i k_{0} x-\alpha x^{2} / 2} $（$k_{0} 、 \alpha$ 为实常数； $\int_{-\infty}^{\infty} d x e^{-a x^{2}}=\sqrt{\frac{\pi}{a}}, \quad a>0$）。
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	求 $t>0$ 时刻动量表象波函数 $\tilde{\Psi}(k, t)$ 及粒子动量几率分布 $\Pi(k, t)$ 。
+	\item 
+	求 $t>0$ 时刻波函数 $\Psi(x, t)$ 及粒子位置几率分布 $\mathrm{P}(x, t)$ 。
+	\item 
+	简述粒子动量几率分布 $\Pi(k, t)$ 及位置几率分布 $\mathrm{P}(x, t)$ 随时间演化的特性。
+	
+	
+	
+\end{enumerate}
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	对自由粒子而言动量是个守恒量，首先变换到动量表象计算较为简单：
+	\[ 
+\begin{aligned}
+	\tilde{\Psi}(k, t) &= \int_{-\infty}^{+\infty} \tilde{\Psi}(k ^{\prime} , 0) \delta(k-k ^{\prime} ) e^{-i \frac{\hbar {k ^{\prime} }^{2}}{2m} t} dk ^{\prime} \\
+	&=\frac{1}{\sqrt{ \alpha }} \cdot \left(\frac{ \alpha }{2}\right)^{ \frac{ 1 }{ 4 } } \cdot e^{- \frac{(k_{0} -k )^{2}}{2 \alpha } } \cdot e^{-i \frac{\hbar {k  }^{2} }{2m} t}
+\end{aligned}
+\]
+动量几率分布 $\Pi(k, t) =\frac{1}{\sqrt{ \alpha \pi}} e^{- \frac{(k_{0} -k )^{2}}{ \alpha } } $ 	
+\begin{note}
+	这里求波函数，也可以直接在动量表象中用时间演化算符来做。
+\end{note}	
+\item 
+%对应的傅里叶变换，计算复杂，略
+波函数为
+\[ 
+\psi(x,t)=\left(\frac{1}{\alpha \pi}\right)^{1 / 4} \sqrt{\frac{1}{2 \pi}} e^{-k_{0}^{2} / 2 \alpha} \sqrt{\frac{2 \pi \alpha \mu}{\mu+i \alpha \hbar t}} \exp \left[\alpha \mu \frac{k_{0}^{2} / \alpha^{2}+2 i x k_{0} / \alpha-x^{2}}{2(\mu+i \alpha \hbar t)}\right]
+ \]
+ 粒子位置几率分布 $\mathrm{P}(x, t)$为
+\[
+%  
+\hspace*{-1cm} %公式太长
+%
+\mathrm{P}(x, t) =\left(\frac{\alpha}{\pi}\right)^{1 / 2} \frac{\mu}{\sqrt{\mu^{2}+(\alpha \hbar t)^{2}}} e^{-k_{0}^{2} / \alpha} \exp \left[\alpha \mu \frac{-\mu\left(x-k_{0} \hbar t / \mu\right)^{2}+\left(k_{0} \hbar t\right)^{2} / \mu+\mu k_{0}^{2} / \alpha^{2}}{\mu^{2}+(\alpha \hbar t)^{2}}\right]
+  \]
+\item 
+%动量是守恒量，概率分布不随时间变化。随着时间的增加，波包中心的强度逐渐减弱，逐渐扩散至整个位置空间
+动量分布几率不随时间变化，即波包所包含的各动量成分不发生变化，自由粒子动量守恒；
+但是坐标空间的几率分布随时间变化，波包峰值位置向前移动的同时，波峰随时间衰减，
+波峰坐标 $x_{m}(t)=\frac{k_{0} \hbar}{\mu} t$， 波包速度 $v=\frac{k_{0} \hbar}{\mu}=\frac{p_{0}}{\mu}$。
+\end{enumerate}
+
+
+}
+
+\item 
+（共30分）
+一自旋为 $1 / 2$ 的粒子的归一化自旋态为 $|\lambda\rangle$ 。设自旋态 $|\lambda\rangle$ 下测量
+自旋角动量 $\hat{s}_{z}$ 得到 $\frac{\hbar}{2}$ 的几率是 $9 / 25$, 测量 $\hat{s}_{x}$ 得到 $\frac{\hbar}{2}$ 的几率是 $1 / 2$ 。
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	求自旋态 $|\lambda\rangle$ 。
+	\item 
+	求该自旋态下自旋角动量 $\hat{s}_{y} $ 的平均值。
+	
+	
+	
+\end{enumerate}
+\banswer{
+%采取不同表象解得结果不一样，一般在$ \sigma_{z} $中进行。下面的答案是对于$ \sigma_{z} $而言的。
+	\begin{enumerate}
+		%\renewcommand{\labelenumi}{\arabic{enumi}.}
+		% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+		%设定全局标号series=example	%引用全局变量resume=example
+		%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+		%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+		\item
+		在$ s_{z} $表象中求解，如果采用这种设法
+		\[ 
+		\ket{\lambda} =  \frac{3}{5} e^{i\phi_{1}} \commamatrix[b]{1; 0} + \frac{4}{5} e^{i\phi_{2}} \commamatrix[b]{0; 1}
+		 \]
+		展开系数有一个相位的不确定性，其间的关系为$ \phi_{1}=\phi_{2}+\frac{\pi}{2} + n\pi $，取值不能随意，要考虑各种情况。可以这样设
+		\[ 
+		|\lambda\rangle=\left(\begin{tblr}{c}
+			 \dfrac{3}{5}  \\
+			x+i y
+		\end{tblr}\right)
+		 \]
+	解得$x=0, y=\pm 4 / 5$。得
+	\[ 
+	\left|\lambda_{1}\right\rangle=\left(\begin{tblr}{c}
+		\dfrac{3}{5} \\
+		\dfrac{4 i}{5}
+	\end{tblr}\right)  \qquad \left|\lambda_{2}\right\rangle=
+\left(\begin{tblr}{c}
+	\dfrac{3}{5} \\
+	-\dfrac{4 i}{5}
+\end{tblr}\right)
+	 \]
+		
+	\item 
+于是得到$\left\langle\lambda_{1}\left|\hat{s}_{y}\right| \lambda_{1}\right\rangle=\frac{12 }{25}\hbar $和$\left\langle\lambda_{2}\left|\hat{s}_{y}\right| \lambda_{2}\right\rangle=-\frac{12 }{25}\hbar $
+		
+	\end{enumerate}
+	
+	
+}
+
+
+\newpage
+\item 
+（共30分）两个质量均为 $m$ 的非全同粒子在一维无限深势阱
+$$
+V(x)=\left\{\begin{tblr}{ll}
+	0, & 0\leq x \leq a \\
+	\infty, & |x|>a
+\end{tblr}\right.
+$$
+中运动。
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	不考虑两个粒子间的相互作用, 求该体系的能级和归一化能量本征态。 
+	\item 
+	设两个粒子之间的相互作用为
+	$$
+	H^{\prime}\left(x_{1}, x_{2}\right)=\left\{\begin{tblr}{ll}
+		V, & \left(\left|x_{2}-x_{1}\right| \leq b\right) \\
+		0, & \left(\left|x_{2}-x_{1}\right|>b\right)
+	\end{tblr}\right.
+	$$
+	其中 $x_{1}$ 和 $x_{2}$ 分别为两个粒子的坐标, $b \leq a, V$ 为常数。以 $H^{\prime}$ 作为微扰, 求基态 能量的一级修正, 结果只保留至 $b / a$ 的一次项。
+	
+\end{enumerate}
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	波函数为
+	\[ 
+	\psi_{n_{1}, n_{2}}\left(x_{1}, x_{2}\right)=\frac{2}{a} \sin \frac{n_{1} \pi x_{1}}{a} \sin \frac{n_{2} \pi x_{2}}{a}
+	 \]
+	 能量为
+	 \[ 
+	 E_{n_{1}, n_{2}}=\frac{\pi^{2} \hbar^{2}}{2 m a^{2}}\left(n_{1}^{2}+n_{2}^{2}\right)
+	  \]
+	\item 
+	基态能量$E_{1,1}=\frac{\pi^{2} \hbar^{2}}{m a^{2}}$，基态包函数$\psi_{1,1}^{(0)}\left(x_{1}, x_{2}\right)=\frac{2}{a} \sin \frac{\pi x_{1}}{a} \sin \frac{\pi x_{2}}{a}$，无简并，能量一级修正项为
+	\[ 
+	E^{(1)}=\iint \frac{2}{a} \sin \frac{\pi x_{1}}{a} \sin \frac{\pi x_{2}}{a} H^{\prime} \frac{2}{a} \sin \frac{\pi x_{1}}{a} \sin \frac{\pi x_{2}}{a} d x_{1} d x_{2}
+	 \]
+直接计算这个积分相当复杂，但考虑到答案只要求我们保留至$ b/a $的一次项即可，便可通过让$ b \rightarrow 0 $的形式来化简。首先化简积分区域的表达式
+\[ 
+E^{(1)}=V\left(\frac{2}{a}\right)^{2} \int_{0}^{a} \sin ^{2} \frac{\pi x_{1}}{a} \int_{x_{1}-b}^{x_{1}+b} \sin ^{2} \frac{\pi x_{2}}{a} d x_{2} d x_{1}
+ \]
+ 其次，化简积分表达式
+ \[ 
+\begin{aligned}
+	E^{(1)}&=V\left(\frac{2}{a}\right)^{2} \int_{0}^{a} \sin ^{2} \frac{\pi x_{1}}{a} \int_{x_{1}-b}^{x_{1}+b} \sin ^{2} \frac{\pi x_{2}}{a} d x_{2} d x_{1} \\
+	&=V\left(\frac{2}{a}\right)^{2} \int_{0}^{a} \sin ^{2} \frac{\pi x_{1}}{a} \cdot 2b \cdot \sin ^{2} \frac{\pi x_{1}}{a} d x_{1}\\
+	&=3V\frac{b}{a}
+\end{aligned}
+  \]
+\end{enumerate}
+
+\begin{note}
+	此题，其它能级的简并很复杂。举个例子：$ 33 ^{2} +4 ^{2}=31 ^{2} +12 ^{2} = 23 ^{2}+24 ^{2}=9 ^{2}+32 ^{2} $
+\end{note}
+	
+}
+
+\item 
+（共30分）
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	考虑由两个自旋为 $\frac{1}{2}$ 的非全同粒子组成的系统, 两个粒子的
+	自旋算符分别记为 $\hat{S}_{1}$ 和 $\hat{S}_{2} $。 求系统总自旋算符 $\hat{S}_{12}^{2}$、$ \hat{S}_{12, z}\left(\hat{S}_{12}=\hat{S}_{1}+\hat{S}_{2}\right)$ 的所有共同本征态和对应的本征值。
+	\item 
+	考虑由三个自旋为 $\frac{1}{2}$ 的非全同粒子组成的系统，第三个粒子的自旋记为 $\hat{S}_{3}$ 。 求总自旋算符 $\hat{S}^{2}$ 、$ \hat{S}_{z}\left(\hat{S}=\hat{S}_{12}+\hat{S}_{3}\right)$ 的所有共同本征态和对应的本征值。
+	
+	
+\end{enumerate}
+
+
+\banswer{
+\begin{enumerate}
+	%\renewcommand{\labelenumi}{\arabic{enumi}.}
+	% A(\Alph) a(\alph) I(\Roman) i(\roman) 1(\arabic)
+	%设定全局标号series=example	%引用全局变量resume=example
+	%[topsep=-0.3em,parsep=-0.3em,itemsep=-0.3em,partopsep=-0.3em]
+	%可使用leftmargin调整列表环境左边的空白长度 [leftmargin=0em]
+	\item
+	共有$ 4 $个本征态，$ \left\{ S^{2}_{12},S_{12z} \right\} $对应$ \ket{lm} $态如下
+	\[ 
+	\begin{tblr}{ll}
+	 \ket{11}&=\ket{\uparrow\uparrow}\\
+	 \ket{10}&=\frac{1}{\sqrt{2}}\left( \ket{\uparrow \downarrow} + \ket{\downarrow \uparrow} \right)\\
+	 \ket{1,-1}&=\ket{\downarrow\downarrow}\\
+	 \ket{00}&=\frac{1}{\sqrt{2}}\left( \ket{\uparrow \downarrow} - \ket{\downarrow \uparrow} \right)
+	\end{tblr}
+	 \]
+	\item 
+	共有$ 8 $个本征态，以$ \left\{ S^{2}_{12}, S^{2},S_{z} \right\} $为完全集，对应态为$ \ket{ljm} $如下
+	\[ 
+	\begin{tblr}{ll}
+	\ket{1, \frac{3}{2} , \frac{3}{2} }&=\ket{\uparrow\uparrow\uparrow}\\
+	\ket{1, \frac{3}{2} , \frac{1}{2} }&=\frac{1}{\sqrt{3}}\left( \ket{ \downarrow\uparrow\uparrow} + \ket{\uparrow\downarrow \uparrow}+\ket{\uparrow \uparrow\downarrow} \right)\\
+	\ket{1, \frac{3}{2} , -\frac{1}{2} }&=\frac{1}{\sqrt{3}}\left( \ket{ \downarrow\downarrow\uparrow} + \ket{\downarrow\uparrow\downarrow }+\ket{\uparrow \downarrow\downarrow} \right)\\
+	\ket{1, \frac{3}{2} ,- \frac{3}{2} }&=\ket{\downarrow\downarrow\downarrow}\\
+	\ket{0, \frac{1}{2} , \frac{1}{2} }&=\frac{1}{\sqrt{2}}\left( \ket{\uparrow \downarrow\uparrow} - \ket{\downarrow \uparrow\uparrow} \right)\\
+	\ket{0, \frac{1}{2} , -\frac{1}{2} }&=\frac{1}{\sqrt{2}}\left( \ket{\uparrow \downarrow\downarrow} - \ket{\downarrow \uparrow\downarrow} \right)\\
+	\ket{1, \frac{1}{2} , \frac{1}{2} }&=\frac{1}{\sqrt{6}}\left( \ket{ \downarrow\uparrow\uparrow} + \ket{\uparrow\downarrow \uparrow}-2\ket{\uparrow \uparrow\downarrow} \right)\\
+	\ket{1, \frac{1}{2} , -\frac{1}{2} }&=\frac{1}{\sqrt{6}}\left( -\ket{ \downarrow\downarrow\uparrow} - \ket{\downarrow\uparrow\downarrow }+2\ket{\uparrow \downarrow\downarrow} \right)
+\end{tblr}	
+	 \]
+这八个态，前六个态都是很好写出来的，后面两个态的求法需要点技巧。例如$ \ket{1, \frac{1}{2} , \frac{1}{2}} $这个态，首先通过分析知道是$ \ket{ \downarrow\uparrow\uparrow} + \ket{\uparrow\downarrow \uparrow}+\ket{\uparrow \uparrow\downarrow}  $这三个态的组合，然后设出三个系数，利用归一性，外加与$ \ket{1, \frac{3}{2} , \frac{1}{2}} $和$ \ket{0, \frac{1}{2} , \frac{1}{2}} $这两个态正交，列出三个方程，解之可得。
+\end{enumerate}
+}
+
+	
+ \end{enumerate}
+ 
+ 
