@@ -38,11 +38,9 @@ openright,zihao=5]{ctexbook}
 \newif\ifanswer %答案显示
 
 
-
-
 \usepackage{ascolorbox}%答案框
 
-
+%罗马数字大小写
 \newcommand{\rmnum}[1]{\romannumeral #1}
 \newcommand{\Rmnum}[1]{\expandafter\@slowromancap\romannumeral #1@}
 
@@ -60,7 +58,7 @@ openright,zihao=5]{ctexbook}
 \usepackage{physicx}%排版矩阵 \commamatrix[b]{1; 0}
 
 \usepackage{tabularray}%新型表格宏包，排版矩阵表格利器 %基本环境 tblr
-
+\usepackage[upright=true]{derivative}%分数导数微分偏微分增量改变量等 
 
 \usepackage{pifont}
 
@@ -80,10 +78,6 @@ openright,zihao=5]{ctexbook}
 \uline{\hbox to 2cm{}}%长度的问题。暂时没找到解决办法
     %\textcolor{red}{\ul{#1}}
 	\fi}
-
-
-
-
 
 
 
